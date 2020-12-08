@@ -46,9 +46,7 @@ img {
 header .conteiner {
     display: flex;
     align-items: center;
-    border-bottom: 4px;
-    border-color: black;
-    
+    border-bottom: 1px solid #ECECEC;
 }
 .nav-list {
     display: flex;
@@ -95,7 +93,11 @@ header .conteiner {
     display: flex;
     align-items: center;
     margin-left: auto;
-    
+}
+.contacts-head2 {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
 }
 .mail {
     margin-right: 50px;
@@ -103,6 +105,9 @@ header .conteiner {
 }
 .maill {
     color:var(--color-blue);
+}
+.mailll {
+    color:var(--color-gray)
 }
 .mail-svg {
     margin-right: 10px;
@@ -161,18 +166,27 @@ header .conteiner {
     padding: 200px 700px;
 }
 /*========== Способности ==========*/
+.ability-icons {
+    background: #F5F4FA;
+    border-radius: 4px;
+    height: 120px;
+}
+.ability-icon{
+    display: inline-block;
+    text-align: center;
+    margin-top: 25px;
+
+}
 .ability-list {
     display: flex;
     justify-content: space-around;
     padding-top:47px;
     padding-bottom: 47px;
 }
-.ability-list-li h3:not(:last-child) {
+.ability-list-li:not(:last-child) {
     margin-right: 30px;
 }
-.ability-list-li p:not(:last-child) {
-    margin-right: 30px;
-}
+
 .ability-list h3 {
     color: #212121;
     width: 270px;
@@ -180,6 +194,7 @@ header .conteiner {
     text-transform: uppercase;
     font-size: 14px;
     line-height: 1.14;
+    margin-top: 10px;
 }
 .ability-list p {
     color: #757575;
@@ -248,6 +263,64 @@ background-color: #F5F4FA;
     padding-bottom: 30px;
     ;
 }
+.list-masanger {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 16px;
+}
+.list-masanger .li-masanger:not(:last-child) {
+    margin-right: 10px;
+}
+.li-masanger .masanger-link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    background-color: var(--color-wight);
+
+}
+.masanger-link:hover {
+    background-color: #2196F3;
+}
+.mesanger-icon {
+    fill: #AFB1B8;
+    margin: auto;
+}
+.mesanger-icon:hover {
+    fill: var(--color-wight)
+}
+/*==========ПОСТОЯННЫЕ КЛИЕНТЫ==========*/
+.clients {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    text-align: center;
+    padding-bottom: 47px;
+}
+
+.clients-li .svg-link:hover {
+    color:var(--color-blue);
+    border: 1px solid var(--color-blue);
+}
+.clients li:not(:last-child) {
+    margin-right: 30px;
+}
+.clients-li .svg-link {
+    display: flex;
+    width: 170px;
+    height: 90px;
+    border: 1px solid #AFB1B8;
+    box-sizing: border-box;
+    border-radius: 4px;
+    color: #AFB1B8;
+    }
+.company {
+    margin: auto;
+    fill: currentColor;
+}
 
 /*========== Подвал =========*/
 
@@ -276,9 +349,58 @@ font-style: normal;
 .footer-cont {
     margin-top: 9px;
 }
+.footer-item {
+    display: flex;
+}
+.footer-item li {
+    margin-right: 70px;
+}
+.comeon-Li {
+    height: 80px;
+    width: 206px;
+    box-sizing: border-box;
+}
+.footer-item2{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+.li-masanger2 .masanger-link2 {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.footer-item2 .li-masanger2:not(:last-child) {
+    margin-right: 10px;
+}
+.mesanger-icon2 {
+    fill: var(--color-wight);
+    margin: auto;
+}
+.masanger-link2:hover {
+    background-color: #2196F3;
+}
+b {
+    color: var(--color-wight);
+}
 
 /*========== Стили к портфолио========== */
-
+.portfolio {
+    color:var(--color-black);
+    font-style: normal;
+    font-weight: 500;
+}
+.first {
+    color:var(--color-blue); 
+}
+.portfolio.first {
+    color:var(--color-blue);
+}
 .buttom:hover, .buttom:focus {
     background-color: var(--color-blue);
     color: var(--color-wight);
@@ -304,10 +426,7 @@ font-style: normal;
 .buttom-button button{
     text-align: center;
     margin-right: 8px;
-}
-
-
-
+    }
 
 .name-progect {
     width: 322px;
@@ -316,7 +435,8 @@ font-style: normal;
     font-size: 18px;
     line-height: 36px;
     letter-spacing: 0.06em;
-    white-space: nowrap
+    white-space: nowrap;
+    color: var(--color-black);
 }
 
 .progect-what {
@@ -341,6 +461,9 @@ font-style: normal;
     background: #FFFFFF;
     border: 1px solid #EEEEEE;
     box-sizing: border-box;
+}
+.progect-list-li:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .progect-list h3 {
