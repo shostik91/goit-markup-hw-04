@@ -355,12 +355,12 @@ font-style: normal;
 .footer-item li {
     margin-right: 70px;
 }
-.comeon-Li {
+/*.comeon-Li {
     height: 80px;
     width: 206px;
     box-sizing: border-box;
-}
-.footer-item2{
+}*/
+.footer-item2 {
     display: flex;
     justify-content: center;
     text-align: center;
